@@ -5,28 +5,12 @@
 //	Endoing took decimal values of a particular word using materials from Lab 1. 
 //	A tree was used and the particular letters were encoded by if LEFT or RIGHT in the tree. 
 //
-// What's on your mind about this lab?
-//  There was no main problem in this lab, but it did take a lot of brainstorming.
-//  I had to change how I put data into the tree than the given template. 
-//  I could not get what was given to work or figure it out :(
-//  Using knowledge from CIS 22C - I still managed to get the encoded message out.
-//  This lab was pretty enjoyable and made me think very hard.
-//	I can feel myself becoming a more critical thinker.
-//
 // Author: Jason Yoon
 //
 // Date: 11/2/2018
 //
 // IDE Used: Visual Microsoft
 //
-
-
-// TEXT FILE:
-//	HELLO!THIS IS FOR LAB ASSIGNMENT 2!THIS LAB WAS A LITTLE DIFFICULT, BUT I THINK I MANAGED TO FIGURE IT OUT.
-//	I HAD TO USE SOME PREVIOUS KNOWLEDGE FROM CIS 22C AND DID NOT USE THE ORIGINAL TEMPLATES WE WERE GIVEN.
-// OUTPUT WILL BE BELOW
-
-
 
 
 #include <iostream>
@@ -136,7 +120,7 @@ int main() {
 	TreeNode<pair<int, string >>* top;
 
 
-	filereader = fileObj.readFile("Lab2File.txt");
+	filereader = fileObj.readFile("File.txt");
 	decimalContainer = fileObj.vectorizeFile(filereader); // Here the vector will just be made
 	pairContainer = morseDecimal.convertToDecimal(decimalContainer); // vector is then converted here
 	cout <<endl;
@@ -146,9 +130,6 @@ int main() {
 	treeOperations.encode(top, "");
 	pairContainer = treeOperations.retrieveEncodedMessage(pairContainer);
 
-	//cout << "Encrypted Message:\n";
-	//for (auto index : pairContainer)
-	//	cout << index.first << " ";
 	
 	cout << "\n\nPrinting Original Message: ";
 	for (auto index : pairContainer)
@@ -171,8 +152,6 @@ vector<pair<string, string>>EncryptwithTree::retrieveEncodedMessage(vector<pair<
 		}
 	}
 
-	//for (auto i : umap)
-	//	cout << i.first << " " << i.second.getData() << endl;
 
 	return pairContainer;
 }
