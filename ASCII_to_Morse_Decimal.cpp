@@ -34,8 +34,8 @@ private:
 	{ "10","I" },{ "149","J" },{ "25","K" },{ "154","L" },{ "5","M" },
 	{ "6","N" },{ "21","O" },{ "150","P" },{ "89","Q" },{ "38","R" },
 	{ "42","S" },{ "1","T" },{ "41","U" },{ "169","V" },{ "37","W" },
-	{ "105","X" },{ "101","Y" },{ "90","Z" },{ "153","Ä" },{ "86","Ö" },
-	{ "165","Ü" },{ "85","Ch" },{ "341","0" },{ "597","1" },{ "661","2" },
+	{ "105","X" },{ "101","Y" },{ "90","Z" },{ "153","Ã„" },{ "86","Ã–" },
+	{ "165","Ãœ" },{ "85","Ch" },{ "341","0" },{ "597","1" },{ "661","2" },
 	{ "677", "3" },{ "681", "4" },{ "682","5" },{ "426","6" },{ "362","7" },
 	{ "346","8" },{ "342","9" },{ "2457","10" },{ "1445","," },{ "2650","?" },
 	{ "662","!" },{ "1386",":" },{ "2470","\"" },{ "2390","\'" },{ "425","=" }
@@ -301,12 +301,3 @@ vector<string> FileIO::vectorizeFile(vector<char> filereader) {
 	}
 	return vectorizedFile;
 }
-
-// OUTPUT MANIPULATED TO SAVE SPACE - inserted newline in messages
-//Original Message : HELLO!THIS IS FOR LAB ASSIGNMENT 2!THIS LAB WAS A LITTLE DIFFICULT, BUT I THINK I MANAGED TO FIGURE IT OUT.
-//					 I HAD TO USE SOME PREVIOUS KNOWLEDGE FROM CIS 22C AND DID NOT USE THE ORIGINAL TEMPLATES WE WERE GIVEN.
-//
-//Encrypted Message : ... taken out because it was too long
-//
-//Printing Original Message : HELLO!THIS IS FOR LAB ASSIGNMENT 2!THIS LAB WAS A LITTLE DIFFICULT, BUT I THINK I MANAGED TO FIGURE IT OUT.
-//							  I HAD TO USE SOME PREVIOUS KNOWLEDGE FROM CIS 22C AND DID NOT USE THE ORIGINAL TEMPLATES WE WERE GIVEN.
